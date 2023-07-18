@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+data='{"sink":{"stdout":null},"source":{"dojo":"+code"}}'
+
+curl -s -XPOST 127.0.0.1:12321 \
+  -H "Accept: application/json" \
+  -d "$data"
